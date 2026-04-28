@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>웹 테트리스</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1>테트리스</h1>
+      <div class="layout">
+        <canvas id="game" width="300" height="600" aria-label="테트리스 게임 화면"></canvas>
+        <aside class="panel">
+          <p><strong>점수:</strong> <span id="score">0</span></p>
+          <p><strong>레벨:</strong> <span id="level">1</span></p>
+          <p><strong>지운 줄:</strong> <span id="lines">0</span></p>
+          <h2>조작법</h2>
+          <ul>
+            <li>← → : 이동</li>
+            <li>↑ : 회전</li>
+            <li>↓ : 빠르게 내리기</li>
+            <li>Space : 하드 드롭</li>
+            <li>P : 일시정지</li>
+            <li>R : 다시 시작</li>
+          </ul>
+          <p id="status">게임 시작!</p>
+        </aside>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
